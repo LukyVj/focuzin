@@ -1,0 +1,70 @@
+- color = color;
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    link(rel="stylesheet",href="/stylesheets/style.css" )
+
+  body
+    img(src=original)
+    canvas(id="canvas", width="400", height="400")
+  
+  - if (gui)
+      header
+        h1 Focuzin
+      form#drawer
+        | draw(
+        input#i_url(type='text', placeholder='url')
+        | ,
+        input#i_y(type='text', placeholder='Y axis')
+        | ,
+        input#i_x(type='text', placeholder='X axis')
+        | ,
+        input#i_w(type='text', placeholder='Width')
+        | ,
+        input#i_h(type='text', placeholder='Height')
+        | ,
+        input#i_c(type='text', placeholder='Color')
+        | );
+        input#send(type='button', value='send')
+
+        br
+        p You can share this url
+        code#result    
+  
+        - if (c)
+          pre
+           | url : <code>#{original}</code>
+           | X axis : <code>#{x}</code>
+           | Y axis : <code>#{y}</code>
+           | W width : <code>#{w}</code>
+           | H height : <code>#{h}</code>
+           | C color : <code>##{c} <div style="background: ##{c}"></div> </code>
+        - else 
+          pre
+           | url : <code>#{original}</code>
+           | X axis : <code>#{x}</code>
+           | Y axis : <code>#{y}</code>
+           | W width : <code>#{w}</code>
+           | H height : <code>#{h}</code>
+           | C color : <code>#FF0000 <div style="background: #FF0000"></div> </code>
+      br
+      code
+         ?u=&lt;img>&y=&lt;y axis>&x=&lt;x axis>&w=&lt;width>&h=&lt;height>&c=&lt;focus color>&gui=&lt;GUI or not>
+
+      br
+      p Just remove <code>&gui=1</code> from the url to get just the image
+
+      
+    footer
+      p From <code><a href="http://twitter.com/lukyvj">@LukyVj</a></code> with <code>&lt;code> </code>
+
+  script(type="text/javascript",src="scripts/lib.js")
+  - if (c)
+    script.
+      draw('#{original}',#{x},#{y},#{w},#{h},'#{c}')
+  - else
+    script.
+      draw('#{original}',#{x},#{y},#{w},#{h},'FF0000')
+            
+           

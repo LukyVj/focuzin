@@ -1,0 +1,24 @@
+{
+  "name": "focuzin",
+  "version": "1.0.0",
+  "description": "Generate a rectangle over any images format to focus on a particular zone of the image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Bonomi <@LukyVj>",
+  "license": "ISC",
+  "devDependencies": {
+    "canvas": "1.3.10",
+    "express": "^4.13.4",
+    "fs": "",
+    "gm": "",
+    "jade": "",
+    "node-sass": "^3.4.2",
+    "node-sass-middleware": "^0.9.8",
+    "open-uri": "^0.4.3",
+    "phantom-render-stream": "",
+    "querystring": "",
+    "request": ""
+  }
+}
