@@ -1,6 +1,6 @@
 # focuzin
-<div class="center" alt="center">
-<img src="http://puu.sh/o4Tfy/7733906076.png" alt="center">
+<div class="center" alt="center" style="text-align:center;" align="center">
+<img src="http://puu.sh/o4Tfy/7733906076.png" alt="center" align="center">
 </div>
 Generate a rectangle over any images format to focus on a particular zone of the image.
 ### Use it:
