@@ -14,8 +14,6 @@
     "fs": "",
     "gm": "",
     "jade": "",
-    "node-sass": "^3.4.2",
-    "node-sass-middleware": "^0.9.8",
     "open-uri": "^0.4.3",
     "phantom-render-stream": "",
     "querystring": "",
