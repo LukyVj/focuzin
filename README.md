@@ -15,3 +15,8 @@ You can access a basic helper interface by adding `&gui=1` at the end of the Foc
 
 Which will give you this : 
 <img src="http://puu.sh/o4TOo/0c2ced05d7.png" />
+
+##### Why Focuzin ? 
+Well, because of [this](http://www.naturexpress.es/blog/wp-content/uploads/2012/08/Untitled-41.jpg), I saw that episode some years ago, and when it come to work with the word "focus", I always have "Focusyn" in mind. 
+
+And finally, I changed the name to "Focuzin"
